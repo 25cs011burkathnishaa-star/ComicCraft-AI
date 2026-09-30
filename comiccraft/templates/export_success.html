@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comic Exported Successfully - ComicCraft</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0066cc, #28a745);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+        .card {
+            background: white;
+            color: #333;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+        }
+        h1 {
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        .btn-home {
+            background-color: #0066cc;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        .btn-home:hover {
+            background-color: #004999;
+        }
+        .pdf-link {
+            display: block;
+            margin-top: 15px;
+            color: #0066cc;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🎉 Comic Exported Successfully!</h1>
+        <p>Your AI-powered comic has been successfully created and compiled into a PDF! Dive back in and bring another story to life.</p>
+        
+        <a href="/{{ pdf_path }}" target="_blank" class="pdf-link">📥 Click here to open/download PDF file</a>
+        <br><br>
+        <a href="/" class="btn-home">Go Create Another Comic</a>
+    </div>
+</body>
+</html>
